@@ -1,0 +1,37 @@
+<html>
+<head>
+    <style>
+        input{
+            border:1px solid #ccc;
+            padding: 10px;
+            width: 100% !important;
+            font-size: 12px !important;
+            margin:5px;
+        }
+    </style>
+</head>
+<body>
+<span>Account Address</span>
+<input type="text" id="account" />
+<br/>
+<span>Message</span>
+
+<input type="text" id="message" />
+<br/>
+<span>Signed Message</span>
+
+<input type="text" id="signed" />
+<br/>
+
+<span>Recovered Message will be Account Address</span>
+
+<input type="text" id="output" />
+<br/>
+<button onclick="javascript:metaStart()" id="btn">Test It</button>
+
+<script type="text/javascript" src="bundle.js"></script>
+
+<script type="text/javascript" src="eth-sig-util.min.js"></script>
+<script type="text/javascript" src="metamask.js"></script>
+</body>
+</html>
